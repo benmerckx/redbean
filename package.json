@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "dev": "haxe dev.hxml && cd bin && ./zip.com redbean.com .init.lua && ./redbean.com",
+    "test": "haxe test.hxml && ./bin/lua.com dist/test.lua"
+  },
+  "devDependencies": {
+    "lix": "^15.12.0"
+  }
+}
