@@ -4,4 +4,4 @@
 -main helder.Unit
 -D lua_vanilla 
 --dce full
---lua dist/test.lua
+--lua bin/dist/test.lua

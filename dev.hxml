@@ -2,4 +2,4 @@
 -main Main
 -D lua_vanilla 
 --dce full
---lua bin/.init.lua
+--lua bin/dist/.init.lua

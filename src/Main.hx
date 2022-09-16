@@ -1,6 +1,11 @@
+import RedBean.*;
+
 function main() {
-  RedBean.OnHttpRequest = () -> {
-    RedBean.Write('Hello from redbean');
-  };
-  RedBean.LaunchBrowser();
+  trace('Init');
+  OnHttpRequest = () -> {
+    Write('Hello from redbean');
+  }
+  OnServerStart = () -> {
+    trace('Server started');
+  }
 }

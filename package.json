@@ -1,7 +1,11 @@
 {
+  "private": true,
   "scripts": {
-    "dev": "haxe dev.hxml && cd bin && ./zip.com redbean.com .init.lua && ./redbean.com",
-    "test": "haxe test.hxml && ./bin/lua.com dist/test.lua"
+    "check": "zip",
+    "dev": "haxe dev.hxml -lib watch -D watch.excludeRoot -D \"watch.run=yarn start\"",
+    "start": "cd bin && ./redbean.com -D dist",
+    "build": "cd bin/dist && ../zip.com ../redbean.com .init.lua && echo Build done",
+    "test": "haxe test.hxml && cd bin && ./redbean.com -F dist/test.lua"
   },
   "devDependencies": {
     "lix": "^15.12.0"
