@@ -4,7 +4,7 @@ import helder.Unit.suite;
 import helder.Unit.assert;
 import haxe.Json;
 
-final MyTest = suite(test -> {
+final TestJson = suite(test -> {
   test('parse primitives', () -> {
     assert.is(Json.parse('1'), 1);
     assert.is(Json.parse('true'), true);
