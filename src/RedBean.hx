@@ -35,6 +35,9 @@ extern class RedBean {
   static function SetHeader(name: String, value: String): Void;
   static function SetCookie(name: String, value: String, ?options: CookieOptions): Void;
 
+  static function DecodeJson(input: String): Dynamic;
+  static function EncodeJson(value: Dynamic): String;
+
   static function __init__(): Void {
     haxe.Log.trace = function(v, ?infos) {
       lua.Lua.print(haxe.Log.formatOutput(v, infos));
